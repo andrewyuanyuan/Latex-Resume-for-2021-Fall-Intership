@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{comment}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.00\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.00\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Anyuan Yu} \\ \vspace{1pt}
+    Mountain View, CA \\ \vspace{1pt}
+    \small \raisebox{-0.1\height} 650-750-4133 ~
+    \href{mailto:x@andrew.cmu.edu}{\raisebox{-0.2\height}\  {\color{Blue} anyuany@andrew.cmu.edu} } ~
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\ {\color{Blue} www.linkedin.com/in/anyuanyu}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\ {\color{Blue} https://github.com/andrewyuanyuan}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{Sep 2021 -- Dec 2022}
+      {Master of Science in Software Engineering}{Mountain View, CA}
+      \item \small\emph{Courses: Foundations of Computer Systems, Foundations of Software Engineering, Cloud Infrastructure and Services}
+    \resumeSubheading
+      {University of Electronic Science and Technology of China}{Sep 2017 -- Jun 2021}
+      {Bachelor of Engineering in Software Engineering; GPA(3.93/4.0); Top 8\%}{Chengdu, China}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, HTML/CSS, Python, Java, C, Typescript, SQL} \\
+     \textbf{Frameworks }{: React, React Native, Redux, Node.js, Flask, Hadoop} \\
+     \textbf{Database and Tools}{: SQlite3, PostGreSQL, MongoDB, Git, Latex} \\
+    }}
+ \end{itemize}
+ \vspace{-18pt}
+
+%-----------EXPERIENCE-----------
+\section{Internships}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Ping An Technology}{May 2021 -- Aug 2021}
+      {Software Development Engineer Intern}{Shenzhen, China}
+      \resumeItemListStart
+        \resumeItem{Collaborated with China Conservatory of Music, designed and constructed front end and back end of the AI Chinese Instrument Museum, capable of identifying 22 kinds of Chinese traditional instruments through uploading picture or audio}
+        \resumeItem{Translated static designs into interactive elements of web applications using HTML, CSS and JavaScript with Jinja2 template engine and performed enhancements including drag \& drop files uploading and loading animation to improve functionality and user experience}
+        \resumeItem{Developed various APIs such as integrating a deep learning model into application and uploading files to web server using Flask and implemented ORM data models with SQLAlchemy}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SAP}{Apr 2020 -- Sep 2020}
+      {Software Development Engineer Intern}{Chengdu, China}
+      \resumeItemListStart
+        \resumeItem{Finished 20+ tasks in backlog when developing desktop version of \href{https://www.sap.com/products/sports-one.html}{\color{Blue} SAP Sports One}, including adjusting user interface using SAP UI5 framework, modifying RESTful APIs using XS Engine in HANA, and changing HANA database schema and queries for new processes and functions}
+        \resumeItem{Created 5+ SAP Sports One Mobile Version front-end components with high reusability using React Native}
+        \resumeItem{Established an efficient front-end state management method to handle real-time customer data with React-Redux}
+        \resumeItem{Developed an intelligent bot to automate repetitive manual processes for Taiwan Cement Corporation using SAP Intelligent RPA (Robotic Process Automation), achieved improvement on specific workflow efficiency by 30\%}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FSE Chat Room}{Aug 2021}
+      {Carnegie Mellon University}{Mountain View, CA}
+      \resumeItemListStart
+        \resumeItem{Built a real-time chatting web application for students in the FSE course to communicate before semester begins using Node.js with express.js, HTML, CSS, and JavaScript with Twig template engine}
+        \resumeItem{Leveraged different node modules and middleware to fulfill the functional requirements such as utilizing socket.io for real-time client-server communication and express-session and passport middleware for user authentication}
+        \resumeItem{Linked SQLite3 database to the HTTP server, providing all the CRUD(Create, Read, Update and Delete) capabilities for user information and chat messages}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Content Creation Platform}{Oct 2020 -- Dec 2020}
+      \resumeItemListStart
+        \resumeItem{Constructed a front end system with clear code structure for application via following React.js workflows}
+        \resumeItem{Managed application states with React-Redux and applied Redux-Thunk middleware to manage complex synchronous logic and asynchronous logic like AJAX requests}
+        \resumeItem{Adopted immutable patterns for state management by utilizing immutable.js and built multiple UI components with Styled Components to increase reusability and scalability}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {Dragon Boat}{Mar 2019 -- Jul 2019}
+      \resumeItemListStart
+        \resumeItem{Won 3rd national prize in China Collegiate Computing Contest. A gaming design project, combines music with racing gameplay, implemented by Cocos Creator (a 2D game engine) via JavaScript and Typescript}
+        \resumeItem{Collaborated with 4 people and responsible for main game logic, gameplay design and coding}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------INVOLVEMENT---------------
+\begin{comment}
+\section{Pulication}
+ \resumeItemListStart
+    \resumeItem{C. Huang, A. Yu, Y. Wang and H. He, "Skin Lesion Segmentation Based on Mask R-CNN," 2020 International Conference on Virtual Reality and Visualization (ICVRV), 2020, pp. 63-67, doi: 10.1109/ICVRV51359.2020.00024.}
+    \vspace{-4pt}
+    \resumeItem{Cheng Huang, Anyuan Yu, and Honglin He. 2020. Using combined Soft-NMS algorithm Method with Faster R-CNN model for Skin Lesion Detection. 2020 6th International Conference on Robotics and Artificial Intelligence. Association for Computing Machinery, New York, NY, USA, 5–8. DOI:https://doi.org/10.1145/3449301.344930}
+ \resumeItemListEnd
+\end{comment}
+
+\end{document}
