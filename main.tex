@@ -48,7 +48,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-0.6in}
+\addtolength{\topmargin}{-0.7in}
 \addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
@@ -94,6 +94,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\headerline}[3]{%
+  \par\medskip\noindent
+  \makebox[0pt][l]{#1}%
+  \makebox[\textwidth][c]{#2}%
+  \makebox[0pt][r]{\texttt{#3}}\par\medskip \vspace{-10pt}}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -117,13 +123,9 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Anyuan Yu} \\ \vspace{1pt}
-    Mountain View, CA \\ \vspace{1pt}
-    \small \raisebox{-0.1\height} 650-750-4133 ~
-    \href{mailto:x@andrew.cmu.edu}{\raisebox{-0.2\height}\  {\color{Blue} anyuany@andrew.cmu.edu} } ~
-    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\ {\color{Blue} www.linkedin.com/in/anyuanyu}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\ {\color{Blue} https://github.com/andrewyuanyuan}}
-    \vspace{-8pt}
+    \headerline{\Huge \scshape Anyuan Yu}{}{\href{mailto:x@andrew.cmu.edu}{{anyuany@andrew.cmu.edu}}} 
+    \headerline{\href{https://linkedin.com/in//}{{https://www.linkedin.com/in/anyuanyu}}}{}{650-750-4133} 
+    \headerline{\href{https://github.com/}{{https://github.com/andrewyuanyuan}}}{}{Mountain View, CA}
 \end{center}
 
 
@@ -134,7 +136,7 @@
       {Carnegie Mellon University}{Sep 2021 -- Dec 2022}
       {Master of Science in Software Engineering}{Mountain View, CA}
       \item \emph{\small Courses: Foundations of Computer Systems, Foundations of Software Engineering, Cloud Infrastructure and Services}
-      
+    \vspace{-4pt}
     \resumeSubheading
       {University of Electronic Science and Technology of China}{Sep 2017 -- Jun 2021}
       {Bachelor of Engineering in Software Engineering; GPA(3.93/4.0); Top 8\%}{Chengdu, China}
@@ -142,17 +144,16 @@
 
 %
 %-----------PROGRAMMING SKILLS-----------
+\vspace{-5pt}
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, HTML/CSS, Python, Java, C, Typescript, SQL} \\
-     \vspace{1pt}
-     \textbf{Frameworks }{: React, React Native, Redux, Node.js, Flask, Hadoop} \\
-     \vspace{1pt}
+     \textbf{Languages}{: JavaScript, HTML/CSS, Java, Python, C, Typescript, SQL} \\
+     \textbf{Frameworks}{: React, React Native, Redux, Node.js, Flask, Hadoop, Kubernetes} \\
      \textbf{Database and Tools}{: SQlite3, PostGreSQL, MongoDB, Git, Latex} \\
     }}
  \end{itemize}
- \vspace{-18pt}
+ \vspace{-12pt}
 
 %-----------EXPERIENCE-----------
 \section{Internships}
@@ -162,36 +163,35 @@
       {Ping An Technology}{May 2021 -- Aug 2021}
       {Software Development Engineer Intern}{Shenzhen, China}
       \resumeItemListStart
-        \resumeItem{Collaborated with China Conservatory of Music, designed and constructed front end and back end of the AI Chinese Instrument Museum, capable of identifying 22 kinds of Chinese traditional instruments through picture or audio}
-        \resumeItem{Translated static designs into interactive elements of web applications using HTML, CSS, and JavaScript with Jinja2}
+        \resumeItem{Collaborated with China Conservatory of Music, designed and constructed front end and back end of the AI Chinese Instrument Museum, capable of identifying \textbf{22 kinds} of Chinese traditional instruments through picture or audio}
+        \resumeItem{Translated static designs into interactive elements of web applications using HTML, CSS and JavaScript with Jinja2}
         \resumeItem{Improved application functionality and user experience through performing various enhancements such as drag \& drop files uploading and loading animation for upload and recognition process}
-        \resumeItem{Developed various APIs such as integrating a deep learning model into application and uploading files to web server using Flask and implemented ORM data models with SQLAlchemy}
+        \resumeItem{Developed various RESTful APIs for deep learning model integration and client/server interactions using Flask and implemented ORM data models with SQLite3 and SQLAlchemy}
       \resumeItemListEnd
-
+    \vspace{5pt}
     \resumeSubheading
       {SAP}{Apr 2020 -- Sep 2020}
       {Software Development Engineer Intern}{Chengdu, China}
       \resumeItemListStart
-        \resumeItem{Finished 15+ tasks in backlog when developing desktop version of \href{https://www.sap.com/products/sports-one.html}{\color{Blue} SAP Sports One}, including adjusting user interface with SAP UI5 framework, modifying RESTful APIs and HANA DB schema and queries for new processes and functions}
-        \resumeItem{Created 5+ SAP Sports One Mobile Version front-end components with high reusability using React Native}
+        \resumeItem{Finished \textbf{15+ tasks} in backlog when developing desktop version of \href{https://www.sap.com/products/sports-one.html}{\color{blue} \textbf{SAP Sports One}}, including adjusting user interface with SAP UI5 framework, modifying RESTful APIs and HANA DB schema and queries for new processes and functions}
+        \resumeItem{Created \textbf{5+ SAP Sports One Mobile Version front-end components} with high reusability using React Native}
         \resumeItem{Established an efficient front-end state management method to handle real-time customer data with React-Redux}
-        \resumeItem{Developed an intelligent bot to automate repetitive manual processes for Taiwan Cement Corporation using SAP Intelligent RPA (Robotic Process Automation), achieved improvement on specific workflow efficiency by 30\%}
+        \resumeItem{Developed an intelligent bot to automate repetitive manual processes for Taiwan Cement Corporation using SAP Intelligent RPA (Robotic Process Automation), achieved improvement on specific workflow efficiency by \textbf{30\%}}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-\vspace{-18pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://www.youtube.com/watch?v=X8SJ_bOvpq4}{\color{Blue} FSE Chat Room}}{Jul 2021 -- Aug 2021}
+      {\href{https://www.youtube.com/watch?v=X8SJ_bOvpq4}{\color{blue} ChatOn - A Social Network Chatting Application}}{Jul 2021 -- Aug 2021}
       {Carnegie Mellon University}{Mountain View, CA}
       \resumeItemListStart
-        \resumeItem{Built a real-time chatting web application for students in the FSE course to communicate before semester begins using Node.js with express.js, HTML, CSS, and JavaScript with Twig template engine}
-        \resumeItem{Leveraged different node modules and middleware to fulfill the functional requirements such as utilizing socket.io for real-time client-server communication and express-session and passport middleware for user authentication}
-        \resumeItem{Linked SQLite3 database to the HTTP server, providing all the CRUD(Create, Read, Update and Delete) capabilities for user information and chat messages}
+        \resumeItem{Built a real-time chatting web application for students in \textit{Foundations of Software Engineering} course to communicate before semester begins using Node.js with express.js, JavaScript and HTML/CSS with Twig template engine}
+        \resumeItem{Leveraged different node modules and middleware to fulfill the functional requirements such as utilizing socket.io for real-time client-server communication, and express-session and passport middleware for user authentication}
+        \resumeItem{Linked MongoDB database to the HTTP server, providing all the CRUD(Create, Read, Update and Delete) capabilities for user information and chat messages}
     \resumeItemListEnd
 
     \resumeProjectHeading
@@ -203,22 +203,20 @@
       \resumeItemListEnd
 
     \resumeProjectHeading
-      {\href{https://www.bilibili.com/video/BV1vB4y1P7L2/}{\color{Blue} Dragon Boat}}{Mar 2019 -- Jul 2019}
+      {\href{https://www.bilibili.com/video/BV1vB4y1P7L2/}{\color{blue} Dragon Boat - A New Concept Game}}{Mar 2019 -- Jul 2019}
       \resumeItemListStart
-        \resumeItem{Won 3rd national prize in China Collegiate Computing Contest. A gaming design project, combines music with racing gameplay, implemented by Cocos Creator (a 2D game engine) via JavaScript and Typescript}
+        \resumeItem{Won \textbf{3rd national prize} in China Collegiate Computing Contest. A gaming design project, combines music with racing gameplay, implemented by Cocos Creator (a 2D game engine) via JavaScript and Typescript}
         \resumeItem{Collaborated with 4 people and responsible for main game logic, gameplay design and coding}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-\vspace{-18pt}
 
-%-----------INVOLVEMENT---------------
-\begin{comment}
-\section{Pulication}
+%-----------Pulication---------------
+\section{Publication}
  \resumeItemListStart
-    \resumeItem{C. Huang, A. Yu, Y. Wang and H. He, "Skin Lesion Segmentation Based on Mask R-CNN," 2020 International Conference on Virtual Reality and Visualization (ICVRV), 2020, pp. 63-67, doi: 10.1109/ICVRV51359.2020.00024.}
-    \vspace{-4pt}
-    \resumeItem{Cheng Huang, Anyuan Yu, and Honglin He. 2020. Using combined Soft-NMS algorithm Method with Faster R-CNN model for Skin Lesion Detection. 2020 6th International Conference on Robotics and Artificial Intelligence. Association for Computing Machinery, New York, NY, USA, 5–8. DOI:https://doi.org/10.1145/3449301.344930}
+    \resumeItem{C. Huang, \textbf{A. Yu}, Y. Wang and H. He, 
+        \textit{
+            {\href{https://ieeexplore.ieee.org/document/9478347}{\color{blue} \textbf{Skin Lesion Segmentation Based on Mask R-CNN}}}, 2020 International Conference on Virtual Reality and Visualization (ICVRV), IEEE
+        }
+    }
  \resumeItemListEnd
-\end{comment}
-
 \end{document}
